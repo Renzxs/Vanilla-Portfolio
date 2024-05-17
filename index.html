@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Florence Batol</title>
+    <link rel="icon" href="assets/tablogo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar-header">
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#contact">Contacts</a>
+        </nav>
+    </header>
+    <div class="section-1" id="home">
+        <h1 class="abs-text">FLORENCE</h1>
+        <div class="header-text-container">
+            <img src="assets/FLORENCE-STROKE.png" alt="assets/FLORENCE-STROKE.png">
+            <img src="assets/FLORENCE-STROKE.png" alt="assets/FLORENCE-STROKE.png">
+            <img src="assets/FLORENCE.png" alt="assets/FLORENCE.png">
+            <img src="assets/FLORENCE-STROKE.png" alt="assets/FLORENCE-STROKE.png">
+            <img src="assets/FLORENCE-STROKE.png" alt="assets/FLORENCE-STROKE.png">
+        </div>
+        <h1 class="abs-text">FULL STACK DEVELOPER</h1>
+    </div>
+
+    <div class="section-2">
+        <img class="sec-2-img" src="assets/sec2-dialog.png" alt="assets/sec2-dialog.png">
+    </div>
+
+    <div class="section-3" id="about">
+        <div class="about-container">
+            <img class="mypic" src="assets/my-pic.png" alt="assets/my-pic.png">
+            <div class="dialog">
+                <h1>I am John Florence Batol</h1>
+                <p class="subheader">Full Stack Web Developer | Android Developer | Designer </p>
+                <p>Hi, I am a John Florence Batol, I Design, Develop and Deploy beautiful and functional websites for the people. Currently I’m studying a Bachelor in Science in Information Technology in the Philippines where I figure out that designing and developing softwares is my passion.</p>
+                <div class="stacks">
+                    <img src="assets/image 35.png" alt="assets/image 35.png">
+                    <img src="assets/image 36.png"  alt="assets/image 36.png">
+                    <img src="assets/image 37.png"  alt="assets/image 37.png">
+                    <img src="assets/image 38.png" alt="assets/image 38.png">
+                    <img src="assets/image 39.png" alt="assets/image 39.png">
+                    <img src="assets/image 40.png" alt="assets/image 40.png">
+                    <img src="assets/image 41.png" alt="assets/image 41.png">
+                    <img src="assets/image 42.png" alt="assets/image 42.png">
+                    <img src="assets/image 43.png" alt="assets/image 43.png">
+                    <img src="assets/image 44.png" alt="assets/image 44.png">
+                    <img src="assets/image 45.png" alt="assets/image 45.png">
+                    <img src="assets/image 46.png" alt="assets/image 46.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-4" id="contact">
+        <div class="sec-4-container">
+            <h1 class="head1">Just an email away.</h1>
+            <h1 class="head2">helloiamflorence@gmail.com</h1>
+            <div class="links">
+                <div class="link-sec">
+                    <h1>NAVIGATION</h1>
+                    <a href="#home">Home</a>
+                    <a href="#about">About Me</a>
+                    <a href="#contact">Contacts</a>
+                </div>
+
+                <div class="link-sec">
+                    <h1>SOCIALS</h1>
+                    <a href="#home">
+                        <img src="./assets/GitHub.png" alt="">
+                        <p>GitHub</p>
+                    </a>
+                    <a href="#home">
+                        <img src="./assets/LinkedIn 3.png" alt="">
+                        <p>LinkedIn</p>
+                    </a>
+                    <a href="#home">
+                        <img src="./assets/Facebook.png" alt="">
+                        <p>Facebook</p>
+                    </a>
+                    <a href="#home">
+                        <img src="./assets/Instagram.png" alt="">
+                        <p>Instagram</p>
+                    </a>
+                </div>
+
+                <div class="link-sec">
+                    <h1>LOCATION</h1>
+                    <a href="#home">Valenzuela City,</a>
+                    <a href="#home">Philippines</a>
+                </div>
+            </div>
+            <footer class="footer">
+                <h1>© 2024 JOHN FLORENCE BATOL</h1>
+                <a href="#home">BACK TO TOP ^</a>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+                if(entry.isIntersecting) {
+                    entry.target.classList.add("spread-animation");
+                } else {
+                    entry.target.classList.remove("spread-animation");
+                }
+            });
+        });
+
+        const images = document.querySelectorAll(".header-text-container img");
+        images.forEach(img => observer.observe(img));
+    </script>
+</body>
+</html>
